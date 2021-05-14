@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Contact Us</title>
+    <style>
+      body {
+        background: linear-gradient(
+            rgba(108, 99, 255, 0.6) 100%,
+            rgba(108, 99, 255, 0.9) 100%
+          ),
+          url("./background.jpg")
+            no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      main {
+        padding: 9% 0;
+      }
+
+      .card-group {
+        border-radius: 10px !important;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+      .card {
+        border: none;
+      }
+
+      .img {
+        height: 200px !important;
+      }
+      .icon {
+        border: none;
+        color: gray;
+        font-size: 14px;
+        background-color: transparent;
+      }
+
+      .text-field {
+        border: none;
+        font-size: 14px;
+        padding-left: 0 !important;
+        background-color: transparent;
+        outline: 0;
+      }
+
+      .text-field::placeholder {
+        font-size: 14px;
+      }
+
+      .textarea-field {
+        border: none;
+        font-size: 14px;
+        padding-left: 15px;
+        outline: 0;
+        background-color: transparent;
+      }
+
+      .textarea-field::placeholder {
+        font-size: 14px;
+      }
+      .input-group {
+        background-color: #dee2e6 !important;
+        padding-left: 10px !important;
+        padding-top: 7px !important;
+        padding-bottom: 6px !important;
+        border-radius: 20px;
+      }
+
+      .send {
+        border-radius: 30px;
+        background-color: rgba(108, 99, 255, 0.9) !important;
+        color: white;
+        font-weight: bold;
+      }
+
+      .img-div {
+        display: flex;
+        height: 100%; /* Or whatever */
+      }
+
+      .img {
+        width: 50%; /* Or whatever */
+        margin: auto; /* Magic! */
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="card-group bg-white">
+          <div class="card">
+            <div class="card-body text-center">
+              <!-- <img src="./mail.svg" class="img-fluid img" alt="..." /> -->
+              <div class="img-div">
+                <img class="img" src="./mail.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="col-sm-8 m-2">
+              <h5 class="card-title mb-4"><b>Get in touch</b></h5>
+              <form action="">
+                <div class="input-group input-group-sm flex-nowrap mb-2">
+                  <span class="input-group-text icon" id="addon-wrapping">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-person-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="text-field"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="addon-wrapping"
+                  />
+                </div>
+                <div class="input-group input-group-sm flex-nowrap mb-2">
+                  <span class="input-group-text icon" id="addon-wrapping">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    class="text-field"
+                    placeholder="Username"
+                    aria-label="Username"
+                    aria-describedby="addon-wrapping"
+                  />
+                </div>
+                <div class="input-group flex-nowrap mb-2">
+                  <textarea
+                    class="textarea-field"
+                    placeholder="Message"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <div class="d-grid">
+                  <button class="btn send" type="button">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
